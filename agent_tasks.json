@@ -1,0 +1,103 @@
+[
+  {
+    "id": "reverse_string",
+    "task": "Write a function reverse(s) that returns the string s reversed.",
+    "tests": [
+      "assert reverse('abc') == 'cba'",
+      "assert reverse('') == ''",
+      "assert reverse('a') == 'a'",
+      "assert reverse('racecar') == 'racecar'"
+    ]
+  },
+  {
+    "id": "is_palindrome",
+    "task": "Write a function is_palindrome(s) that returns True if s reads the same forwards and backwards, ignoring case, spaces and punctuation.",
+    "tests": [
+      "assert is_palindrome('A man, a plan, a canal: Panama') is True",
+      "assert is_palindrome('hello') is False",
+      "assert is_palindrome('') is True",
+      "assert is_palindrome(\"No 'x' in Nixon\") is True"
+    ]
+  },
+  {
+    "id": "fizzbuzz",
+    "task": "Write a function fizzbuzz(n) that returns a list of strings for the numbers 1 to n: 'Fizz' for multiples of 3, 'Buzz' for multiples of 5, 'FizzBuzz' for multiples of both, otherwise the number as a string.",
+    "tests": [
+      "assert fizzbuzz(5) == ['1', '2', 'Fizz', '4', 'Buzz']",
+      "assert fizzbuzz(15)[-1] == 'FizzBuzz'",
+      "assert fizzbuzz(0) == []"
+    ]
+  },
+  {
+    "id": "low_median",
+    "task": "Write a function median(nums) that returns the median of a non-empty list of numbers. Do not modify the input list.",
+    "tests": [
+      "assert median([3, 1, 2]) == 2",
+      "assert median([1, 2, 3, 4]) == 2",
+      "assert median([5]) == 5",
+      "xs = [3, 1, 2]; median(xs); assert xs == [3, 1, 2]"
+    ]
+  },
+  {
+    "id": "round_half_up",
+    "task": "Write a function round_half_up(x) that rounds a number to the nearest integer and returns an int.",
+    "tests": [
+      "assert round_half_up(2.5) == 3",
+      "assert round_half_up(3.5) == 4",
+      "assert round_half_up(0.5) == 1",
+      "assert round_half_up(-2.5) == -3",
+      "assert round_half_up(2.4) == 2",
+      "assert round_half_up(-2.4) == -2",
+      "assert isinstance(round_half_up(2.5), int)"
+    ]
+  },
+  {
+    "id": "merge_sum",
+    "task": "Write a function merge_sum(a, b) that merges two dictionaries of numbers, adding the values of keys that appear in both. Neither input may be modified.",
+    "tests": [
+      "assert merge_sum({'a': 1, 'b': 2}, {'b': 3, 'c': 4}) == {'a': 1, 'b': 5, 'c': 4}",
+      "assert merge_sum({}, {}) == {}",
+      "x = {'a': 1}; merge_sum(x, {'a': 2}); assert x == {'a': 1}"
+    ]
+  },
+  {
+    "id": "flatten",
+    "task": "Write a function flatten(items) that flattens a nested list of arbitrary depth into a single list, preserving order.",
+    "tests": [
+      "assert flatten([1, [2, [3, [4]]]]) == [1, 2, 3, 4]",
+      "assert flatten([]) == []",
+      "assert flatten([[], [[]]]) == []",
+      "assert flatten([1, [2, 3], 4]) == [1, 2, 3, 4]"
+    ]
+  },
+  {
+    "id": "top_words",
+    "task": "Write a function top_words(text, k) that returns the k most frequent words in text as a list of (word, count) tuples. Words are case-insensitive and punctuation is ignored.",
+    "tests": [
+      "assert top_words('the cat and the hat and the bat', 2) == [('the', 3), ('and', 2)]",
+      "assert top_words('b a c a b', 3) == [('a', 2), ('b', 2), ('c', 1)]",
+      "assert top_words('', 3) == []",
+      "assert top_words('Hello, hello!', 1) == [('hello', 2)]"
+    ]
+  },
+  {
+    "id": "roman_to_int",
+    "task": "Write a function roman_to_int(s) that converts a Roman numeral string to an integer.",
+    "tests": [
+      "assert roman_to_int('III') == 3",
+      "assert roman_to_int('IV') == 4",
+      "assert roman_to_int('IX') == 9",
+      "assert roman_to_int('LVIII') == 58",
+      "assert roman_to_int('MCMXCIV') == 1994"
+    ]
+  },
+  {
+    "id": "run_length_encode",
+    "task": "Write a function rle(s) that run-length encodes a string.",
+    "tests": [
+      "assert rle('aaabcc') == 'a3b1c2'",
+      "assert rle('') == ''",
+      "assert rle('z') == 'z1'"
+    ]
+  }
+]

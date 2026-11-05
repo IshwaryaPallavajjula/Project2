@@ -1,0 +1,13 @@
+# String handling
+write a function that checks if a string is a palindrome, ignoring case and punctuation
+write a function that counts the number of vowels in a string
+write a function that reverses the order of words in a sentence
+# Math
+write a function that checks if a number is prime
+write a function that returns the nth Fibonacci number
+write a function that computes the factorial of a non-negative integer
+# List and dict operations
+write a function that removes duplicates from a list while preserving order
+write a function that counts word frequencies in a text and returns a dictionary
+write a function that merges two dictionaries, summing values for shared keys
+write a function that flattens a nested list of arbitrary depth
